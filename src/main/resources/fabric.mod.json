@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "funmod",
+	"version": "${version}",
+	"name": "Fun Mod",
+	"description": "It is Fun",
+	"authors": [
+		"xdim12"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/funmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.xdim12.funmod.FunMod"
+		],
+		"fabric-datagen": [
+			"net.xdim12.funmod.FunModDataGenerator"
+		],
+		"client": [
+			"net.xdim12.funmod.FunModClient"
+		]
+	},
+	"mixins": [
+		"funmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.2",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
